@@ -5,7 +5,41 @@
 .welcome-header {
   background-color: #e7e7e7;
   height: 55px;
-  width: 70%;
+  width: 100%;
 }
 
+.nav-bar {
+  display: table;   
+  margin: 0;
+}
+
+section#navigation-panel {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-size: 30px;
+  display: table;
+}
+
+ul#menu-bar-list {
+	min-width: 696px;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+ul#menu-bar-list li {
+    display: inline;
+    padding-right: 20px;
+}
+
+ul#menu-bar-list li a {
+    text-decoration: none;
+    color: black;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: black; */
+}
 
