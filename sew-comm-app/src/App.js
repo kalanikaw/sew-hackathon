@@ -17,7 +17,7 @@ function App() {
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <section id="navigation-panel">
                         <ul className="menu-bar" id="menu-bar-list">
-                            <li><Link to={'/calendar'} className="nav-link">Calendar</Link></li>
+                            <li><Link to={'/calendar'} className="nav-link">My Availability</Link></li>
                             <li><Link to={'/orders'} className="nav-link">My Orders</Link></li>
                         </ul>
                     </section>
