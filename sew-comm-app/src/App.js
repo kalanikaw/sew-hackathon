@@ -1,24 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
-// import Calendar from './calendar'
+import Calendar from './calendar/Calendar'
 
 import './App.css';
-
-
-class Calendar extends React.Component {
-  render() {
-    return (
-      <h1>Calendar</h1>
-    )
-
-  }
-}
 
 function App() {
   return (
     <div className="App">
-      <section class="welcome-header">
+      <section className="welcome-header">
         Hey Gladness
       </section>
 
