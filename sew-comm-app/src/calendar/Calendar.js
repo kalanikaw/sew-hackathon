@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
-import './calendar.css';
+import './Calendar.css';
 function DayCheckbox() {
     return (
         <form>
@@ -11,6 +11,7 @@ function DayCheckbox() {
         </form>
     )
 }
+
 class Calendar extends React.Component {
     render() {
         const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -18,20 +19,20 @@ class Calendar extends React.Component {
       return (
           <div>
             <h1>Calendar</h1>
-
-            <table calendar-table>
+            <table className="calendar-table">
                 <tr>
                     {
                         days.map(day => 
-                            <th>{day}</th>)
+                            <th key={day}>{day}</th>)
                     }
                 </tr>
                 <tr>
                     {
-                        days.map(day => <td><DayCheckbox/></td>)
+                        days.map(day => <td key={day}><DayCheckbox/></td>)
                     }
                    
                 </tr>
+
             </table>
           </div>
       )
