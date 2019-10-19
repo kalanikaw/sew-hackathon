@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
-import './calendar.css';
+import './Calendar.css';
 function DayCheckbox() {
     return (
         <form>
@@ -23,12 +23,12 @@ class Calendar extends React.Component {
                 <tr>
                     {
                         days.map(day => 
-                            <th>{day}</th>)
+                            <th key={day}>{day}</th>)
                     }
                 </tr>
                 <tr>
                     {
-                        days.map(day => <td><DayCheckbox/></td>)
+                        days.map(day => <td key={day}><DayCheckbox/></td>)
                     }
                    
                 </tr>
