@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
 import Calendar from './calendar/Calendar'
+import Orders from './Orders'
 
 import './App.css';
 
@@ -28,6 +29,7 @@ function App() {
 
                 <Switch>
                     <Route exact path='/calendar' component={Calendar} />
+                    <Route exact path='/orders' component={Orders} />
                 </Switch>
 
             </BrowserRouter>
