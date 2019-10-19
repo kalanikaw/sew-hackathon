@@ -27,7 +27,7 @@ function App() {
 
 
                 <Switch>
-                    <Route exact path='/calendar' component={Calendar} />
+                    <Route exact path='./calendar' component={Calendar} />
                 </Switch>
 
             </BrowserRouter>
