@@ -8,7 +8,7 @@ function App() {
       <section class="welcome-header">
         Hey Gladness
       </section>
-      
+
     </div>
   );
 }
