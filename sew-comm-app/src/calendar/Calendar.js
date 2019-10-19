@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
-import './Calendar.css';
-
+import './calendar.css';
 function DayCheckbox() {
     return (
         <form>
@@ -35,12 +34,9 @@ class Calendar extends React.Component {
                 </tr>
 
             </table>
-
-
           </div>
       )
   
     }
   }
-
 export default Calendar
