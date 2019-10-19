@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
 import Calendar from './calendar/Calendar'
-import Orders from './Orders'
+import Orders from './orders/Orders'
 
 import './App.css';
 
@@ -17,8 +17,12 @@ function App() {
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <section id="navigation-panel">
                         <ul className="menu-bar" id="menu-bar-list">
-                            <li><Link to={'/calendar'} className="nav-link">Calendar</Link></li>
-                            <li><Link to={'/orders'} className="nav-link">My Orders</Link></li>
+
+                            <li><Link to={'/calendar'} className="nav-link"><img id="bagIcon" src={require('./CalendarIcon.png')} height="42" width="42"></img> </Link></li>
+
+                            <li><Link to={'/orders'} className="nav-link"><img id="calendarIcon" src={require('./BagIcon.png')} height="42" width="42"></img></Link></li>
+
+
                         </ul>
                     </section>
                     
