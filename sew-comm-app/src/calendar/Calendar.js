@@ -30,7 +30,7 @@ class Calendar extends React.Component {
     render() {
         const currentWeek = this.calculateWeek();
 
-        const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     
       return (
           <div>
