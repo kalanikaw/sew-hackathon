@@ -53,6 +53,7 @@ class Calendar extends React.Component {
                 }
 
             </table>
+            <button className="save-button">Save</button>
           </div>
       )
   
