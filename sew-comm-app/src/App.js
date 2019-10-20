@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
 import Calendar from './calendar/Calendar'
 import Orders from './orders/Orders'
+import BagAdder from './BagAdder/BagAdder'
+
 import './App.css';
 
 function App() {
