@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
 import Calendar from './calendar/Calendar'
 import Orders from './orders/Orders'
-
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <section className="welcome-header">
-        Hey Gladness
+        <img id="sew-logo" src={require('./SewLogo.png')} />
+        <h1> Hey Gladness!</h1>
       </section>
 
       <BrowserRouter>

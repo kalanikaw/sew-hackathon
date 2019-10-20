@@ -3,10 +3,13 @@
 }
 
 .welcome-header {
-  background-color: #e7e7e7;
-  height: 55px;
+  background-color: lightblue;
+  height: 100%;
   width: 100%;
   text-emphasis: bold;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav-bar {
@@ -44,3 +47,7 @@ ul#menu-bar-list li a {
     border-color: black; */
 }
 
+#sew-logo{
+  height: 100px;
+  width: auto;
+}
