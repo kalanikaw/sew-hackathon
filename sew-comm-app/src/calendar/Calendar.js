@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
-import './Calendar.css';
+import './calendar.css';
 function DayCheckbox(props) {
     return (
         <form>
