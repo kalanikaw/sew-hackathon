@@ -1,0 +1,23 @@
+.calendar-table th.day {
+
+    display: flex;
+    justify-content: center;
+}
+.calendar-table {
+    width: 100%;
+}
+
+.calendar-table th, td {
+    border: 1px solid black;
+    padding: 20px
+  }
+
+.save-button {
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    font-size: 20px;
+}
