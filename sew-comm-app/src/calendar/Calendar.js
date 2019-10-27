@@ -2,17 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Link, Route} from 'react-router-dom';
 import './Calendar.css';
-function DayCheckbox() {
+function DayCheckbox(props) {
     return (
         <form>
             <label>
-                <input name="available" type="checkbox"/>
+                <input name="available" type="checkbox" checked={props.isAvailable}
+            onChange={props.handleInputChange}/>
             </label>
         </form>
     )
 }
 
 class Calendar extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            dayAvail: [true ,false, true, false, false, true, true]
+        }
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.saveAvailability = this.saveAvailability.bind(this);
+
+        
+    }
     calculateWeek() {
 
         let curr = new Date 
@@ -26,6 +38,28 @@ class Calendar extends React.Component {
 
         return week;
 
+    }
+
+    saveAvailability() {
+        console.log('final availabilities', this.state.dayAvail)
+
+        // TODO save these availabilities in database, store by ID of employee
+
+        // TODO onload of app populate state from database
+
+
+
+    }
+
+    handleInputChange(i) {
+
+        let days = this.state.dayAvail;
+        days[i] = !this.state.dayAvail[i]
+
+        this.setState({
+            ...this.state, 
+            dayAvail: days
+        })
     }
     render() {
         const currentWeek = this.calculateWeek();
@@ -44,16 +78,16 @@ class Calendar extends React.Component {
                     
                 </tr>
                 {
-                    days.map(day => 
+                    days.map((day, index) => 
                     <tr key={day}>
                         <td>{day}</td>
-                        <td><DayCheckbox/></td>
+                        <td><DayCheckbox isAvailable={this.state.dayAvail[index]} handleInputChange={i => this.handleInputChange(index)}/></td>
 
                     </tr>)
                 }
 
             </table>
-            <button className="save-button">Save</button>
+            <button className="save-button" onClick={() => this.saveAvailability()}>Save</button>
           </div>
       )
   
